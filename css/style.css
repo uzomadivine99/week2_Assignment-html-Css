@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+section{
+    padding:20px;
+}
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+article{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+article img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#003366;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero img{
+        height:250px;
+    }
+}
